@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7D2E9861-467D-4246-8F2E-7AFA10D7BA58}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game_Project</RootNamespace>
+    <AssemblyName>Game_Project</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Character.cs" />
+    <Compile Include="Classes\Coin.cs" />
+    <Compile Include="Classes\Dino.cs" />
+    <Compile Include="Classes\Knight.cs" />
+    <Compile Include="Classes\MovingItem.cs" />
+    <Compile Include="Classes\Trap.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpPage.xaml.cs">
+      <DependentUpon>HelpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScorePage.xaml.cs">
+      <DependentUpon>ScorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShopPage.xaml.cs">
+      <DependentUpon>ShopPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignInPage.xaml.cs">
+      <DependentUpon>SignInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.xaml.cs">
+      <DependentUpon>Storage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Backward_BTN.png" />
+    <Content Include="Assets\BG.png" />
+    <Content Include="Assets\Clock_Icon.png" />
+    <Content Include="Assets\Close_BTN.png" />
+    <Content Include="Assets\Cristal_Icon.png" />
+    <Content Include="Assets\Dino\Exit_BTN.png" />
+    <Content Include="Assets\Dino\FAQ_BTN.png" />
+    <Content Include="Assets\Dino\Header.png" />
+    <Content Include="Assets\Dino\Info_BTN.png" />
+    <Content Include="Assets\Dino\Rating_BTN.png" />
+    <Content Include="Assets\Dino\Settings_BTN.png" />
+    <Content Include="Assets\Dino\Shop_BTN.png" />
+    <Content Include="Assets\Dino\startbg.jpg" />
+    <Content Include="Assets\Dino\Start_BTN.png" />
+    <Content Include="Assets\Dino\Table.png" />
+    <Content Include="Assets\Dot_01.png" />
+    <Content Include="Assets\Dot_02.png" />
+    <Content Include="Assets\Forward_BTN.png" />
+    <Content Include="Assets\Header.png" />
+    <Content Include="Assets\HP_Icon.png" />
+    <Content Include="Assets\Information.png" />
+    <Content Include="Assets\Menu_BTN.png" />
+    <Content Include="Assets\Dino\Storage.png" />
+    <Content Include="Assets\Ok_BTN.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\RatingHeader.png" />
+    <Content Include="Assets\RatingWindow.png" />
+    <Content Include="Assets\ShopHeader.png" />
+    <Content Include="Assets\background.gif" />
+    <Content Include="Assets\bgfuture.gif" />
+    <Content Include="Assets\Dino\DinoDeadGif.gif" />
+    <Content Include="Assets\Dino\DinoIdleLeft.gif" />
+    <Content Include="Assets\Dino\DinoIdleRightGif.gif" />
+    <Content Include="Assets\Dino\DinoJumpLeft.gif" />
+    <Content Include="Assets\Dino\DinoJumpRight.gif" />
+    <Content Include="Assets\Dino\DinoRunLeft.gif" />
+    <Content Include="Assets\Dino\DinoRunRight.gif" />
+    <Content Include="Assets\bgfuture2.gif" />
+    <None Include="Assets\xc" />
+    <Content Include="Assets\Knight\AttackLeft.gif" />
+    <Content Include="Assets\Knight\AttackRight.gif" />
+    <Content Include="Assets\Knight\Dead.gif" />
+    <Content Include="Assets\Knight\IdleLeft.gif" />
+    <Content Include="Assets\Knight\IdleRight.gif" />
+    <Content Include="Assets\Knight\JumpLeft.gif" />
+    <Content Include="Assets\Knight\JumpRight.gif" />
+    <Content Include="Assets\Knight\RunLeft.gif" />
+    <Content Include="Assets\Knight\RunRight.gif" />
+    <Content Include="Assets\Knight\WalkLeft.gif" />
+    <Content Include="Assets\Knight\WalkRight.gif" />
+    <Content Include="Assets\kaktus.jpg" />
+    <Content Include="Assets\png\ava\ava2.png" />
+    <Content Include="Assets\png\ava\ava2_2.png" />
+    <Content Include="Assets\png\ava\ava2_sh.png" />
+    <Content Include="Assets\png\ava\ava3.png" />
+    <Content Include="Assets\png\ava\ava3_1.png" />
+    <Content Include="Assets\png\ava\ava3_2.png" />
+    <Content Include="Assets\png\ava\ava3_sh.png" />
+    <Content Include="Assets\png\ava\ava4.png" />
+    <Content Include="Assets\png\ava\ava4_1.png" />
+    <Content Include="Assets\png\ava\ava4_2.png" />
+    <Content Include="Assets\png\ava\ava4_sh.png" />
+    <Content Include="Assets\png\ava\ava_05.png" />
+    <Content Include="Assets\png\ava\ava_06.png" />
+    <Content Include="Assets\png\ava\ava_07.png" />
+    <Content Include="Assets\png\ava\c22.png" />
+    <Content Include="Assets\png\ava\c23.png" />
+    <Content Include="Assets\png\ava\cr_01.png" />
+    <Content Include="Assets\png\ava\cr_02.png" />
+    <Content Include="Assets\png\ava\cr_03.png" />
+    <Content Include="Assets\png\ava\cr_04.png" />
+    <Content Include="Assets\png\ava\sh22.png" />
+    <Content Include="Assets\png\ava\sh23.png" />
+    <Content Include="Assets\png\bar2\lz.png" />
+    <Content Include="Assets\png\bar2\lz_sh.png" />
+    <Content Include="Assets\png\bar2\p_01.png" />
+    <Content Include="Assets\png\bar2\p_01_sh.png" />
+    <Content Include="Assets\png\bar2\p_02.png" />
+    <Content Include="Assets\png\bar2\p_02_sh.png" />
+    <Content Include="Assets\png\bar2\sl_01.png" />
+    <Content Include="Assets\png\bar2\sl_f_01.png" />
+    <Content Include="Assets\png\bar2\zv_01.png" />
+    <Content Include="Assets\png\bar2\zv_02.png" />
+    <Content Include="Assets\png\button_full\btt_01.png" />
+    <Content Include="Assets\png\button_full\btt_01_sh.png" />
+    <Content Include="Assets\png\button_full\btt_02.png" />
+    <Content Include="Assets\png\button_full\ic_01.png" />
+    <Content Include="Assets\png\button_full\ic_02.png" />
+    <Content Include="Assets\png\button_wood\wb_01.png" />
+    <Content Include="Assets\png\button_wood\wb_02.png" />
+    <Content Include="Assets\png\button_wood\wb_03.png" />
+    <Content Include="Assets\png\button_wood\wb_04.png" />
+    <Content Include="Assets\png\button_wood\wb_05.png" />
+    <Content Include="Assets\png\button_wood\wb_sh_01.png" />
+    <Content Include="Assets\png\button_wood\wb_sh_02.png" />
+    <Content Include="Assets\png\button_wood\wb_sh_03.png" />
+    <Content Include="Assets\png\button_wood\wb_sh_04.png" />
+    <Content Include="Assets\png\button_wood\wb_sh_05.png" />
+    <Content Include="Assets\png\frame\bg1.png" />
+    <Content Include="Assets\png\frame\bg2.png" />
+    <Content Include="Assets\png\frame\cn_01.png" />
+    <Content Include="Assets\png\frame\f_01.png" />
+    <Content Include="Assets\png\frame\f_02.png" />
+    <Content Include="Assets\png\icons\i_01.png" />
+    <Content Include="Assets\png\icons\i_02.png" />
+    <Content Include="Assets\png\icons\i_03.png" />
+    <Content Include="Assets\png\icons\i_04.png" />
+    <Content Include="Assets\png\icons\i_05.png" />
+    <Content Include="Assets\png\icons_02\10z.png" />
+    <Content Include="Assets\png\icons_02\11z.png" />
+    <Content Include="Assets\png\icons_02\12z_.png" />
+    <Content Include="Assets\png\icons_02\13z.png" />
+    <Content Include="Assets\png\icons_02\14z.png" />
+    <Content Include="Assets\png\icons_02\15z.png" />
+    <Content Include="Assets\png\icons_02\16z.png" />
+    <Content Include="Assets\png\icons_02\17z.png" />
+    <Content Include="Assets\png\icons_02\18z.png" />
+    <Content Include="Assets\png\icons_02\19z.png" />
+    <Content Include="Assets\png\icons_02\1z.png" />
+    <Content Include="Assets\png\icons_02\20z.png" />
+    <Content Include="Assets\png\icons_02\21z.png" />
+    <Content Include="Assets\png\icons_02\22z.png" />
+    <Content Include="Assets\png\icons_02\23z.png" />
+    <Content Include="Assets\png\icons_02\24z.png" />
+    <Content Include="Assets\png\icons_02\2z.png" />
+    <Content Include="Assets\png\icons_02\3z.png" />
+    <Content Include="Assets\png\icons_02\4z.png" />
+    <Content Include="Assets\png\icons_02\5z.png" />
+    <Content Include="Assets\png\icons_02\6z.png" />
+    <Content Include="Assets\png\icons_02\7z.png" />
+    <Content Include="Assets\png\icons_02\8z.png" />
+    <Content Include="Assets\png\icons_02\9z.png" />
+    <Content Include="Assets\png\kursoru\br_01.png" />
+    <Content Include="Assets\png\kursoru\br_02.png" />
+    <Content Include="Assets\png\kursoru\br_03.png" />
+    <Content Include="Assets\png\kursoru\br_04.png" />
+    <Content Include="Assets\png\kursoru\br_05.png" />
+    <Content Include="Assets\png\kursoru\br_06.png" />
+    <Content Include="Assets\png\kursoru\br_07.png" />
+    <Content Include="Assets\png\kursoru\br_08.png" />
+    <Content Include="Assets\png\kursoru\color\blue.png" />
+    <Content Include="Assets\png\kursoru\color\green.png" />
+    <Content Include="Assets\png\kursoru\color\red.png" />
+    <Content Include="Assets\png\nameplate1\plt.png" />
+    <Content Include="Assets\png\nameplate1\rp.png" />
+    <Content Include="Assets\png\nameplate1\sh_plt.png" />
+    <Content Include="Assets\png\nameplate1\sh_rp.png" />
+    <Content Include="Assets\png\nameplate2\plt_sm.png" />
+    <Content Include="Assets\png\nameplate2\plt_sm_sh.png" />
+    <Content Include="Assets\png\nameplate2\rp_sm.png" />
+    <Content Include="Assets\png\nameplate2\rp_sm_sh.png" />
+    <Content Include="Assets\png\nice1_2\c2.png" />
+    <Content Include="Assets\png\nice1_2\c2_sh.png" />
+    <Content Include="Assets\png\nice1_2\pln_01.png" />
+    <Content Include="Assets\png\nice1_2\pln_02.png" />
+    <Content Include="Assets\png\pop1\fl_01.png" />
+    <Content Include="Assets\png\pop1\plt_03.png" />
+    <Content Include="Assets\png\pop1\pop_01.png" />
+    <Content Include="Assets\png\pop1\rb_01.png" />
+    <Content Include="Assets\png\pop1\slt_lg.png" />
+    <Content Include="Assets\png\pop2\ava_slt_01.png" />
+    <Content Include="Assets\png\pop2\c1_2.png" />
+    <Content Include="Assets\png\pop2\c1_2_1.png" />
+    <Content Include="Assets\png\pop2\c1_2_3.png" />
+    <Content Include="Assets\png\pop2\ld_slt.png" />
+    <Content Include="Assets\png\pop2\slt_01_l.png" />
+    <Content Include="Assets\png\pop2\yasher222.png" />
+    <Content Include="Assets\png\pop2\yasher223.png" />
+    <Content Include="Assets\png\ribbon\rbb_01.png" />
+    <Content Include="Assets\png\ribbon\rbb_02.png" />
+    <Content Include="Assets\Cristal.png" />
+    <Content Include="Assets\spaceship_2.png" />
+    <Content Include="Assets\SettingWindow.png" />
+    <Content Include="Assets\Stats_Bar.png" />
+    <Content Include="Assets\Table_01.png" />
+    <Content Include="Assets\Price.png" />
+    <Content Include="Assets\Choose_BTN.png" />
+    <Content Include="Assets\Table_02.png" />
+    <Content Include="Assets\Window.png" />
+    <Content Include="Assets\Window_2.png" />
+    <Content Include="Assets\Window_3.png" />
+    <Content Include="Assets\Zombie\AttackLeft.gif" />
+    <Content Include="Assets\Zombie\AttackRight.gif" />
+    <Content Include="Assets\Zombie\DieLeft.gif" />
+    <Content Include="Assets\Zombie\DieRight.gif" />
+    <Content Include="Assets\Zombie\IdleLeft.gif" />
+    <Content Include="Assets\Zombie\IdleRight.gif" />
+    <Content Include="Assets\Zombie\RunLeft.gif" />
+    <Content Include="Assets\Zombie\RunRight.gif" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ScorePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShopPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignInPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Storage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{e8ca5d44-0829-4b33-8034-60003a158269}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

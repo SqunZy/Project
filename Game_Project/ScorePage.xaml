@@ -1,0 +1,64 @@
+﻿<Page  Width="1920" Height="1080"
+    x:Class="Game_Project.ScorePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Game_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="Button">
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" BackgroundSizing="{TemplateBinding BackgroundSizing}" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" CornerRadius="{TemplateBinding CornerRadius}" ContentTransitions="{TemplateBinding ContentTransitions}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ContentPresenter>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets//BG.png">
+                </ImageBrush>
+            </Grid.Background>
+        </Grid>
+        <Grid Name="Board" Margin="617,129,617,102" Width="679" Height="843">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="349*"/>
+                <RowDefinition Height="35*"/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets//RatingWindow.png" Stretch="Fill"  />
+
+            </Grid.Background>
+        </Grid>
+        <Button Style="{StaticResource ButtonStyle1}"  Name="HomeButton" Content="" 
+                FontSize="50" 
+                BorderThickness="10" CornerRadius="0" Width="127" Height="120" Click="HomeButton_Click" Margin="0,807,887,0" VerticalAlignment="Top" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-0.604"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="Assets//Menu_BTN.png"></ImageBrush>
+
+            </Button.Background>
+        </Button>
+        <Image Source="/Assets/RatingHeader.png" Margin="855,151,819,865" />
+
+    </Grid>
+</Page>
